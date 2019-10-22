@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.result import Result  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.result import Result  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestResult(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResult(unittest.TestCase):
     def testResult(self):
         """Test Result"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.result.Result()  # noqa: E501
+        # model = pyqedit.models.result.Result()  # noqa: E501
         pass
 
 

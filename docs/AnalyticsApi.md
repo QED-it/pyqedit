@@ -1,4 +1,4 @@
-# asset_transfer.AnalyticsApi
+# pyqedit.AnalyticsApi
 
 All URIs are relative to *http://localhost:12052*
 
@@ -21,19 +21,19 @@ List all verified Transactions from the network, even ones that do not have anyt
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.AnalyticsApi(asset_transfer.ApiClient(configuration))
-get_network_activity_request = asset_transfer.GetNetworkActivityRequest() # GetNetworkActivityRequest | 
+api_instance = pyqedit.AnalyticsApi(pyqedit.ApiClient(configuration))
+get_network_activity_request = pyqedit.GetNetworkActivityRequest() # GetNetworkActivityRequest | 
 
 try:
     # Get details on past blocks either by order using start_index and number_of_results or by the tx_hashes of the transactions
@@ -77,18 +77,18 @@ Returns detailed information about the status of the sync between the QEDIT Node
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.AnalyticsApi(asset_transfer.ApiClient(configuration))
+api_instance = pyqedit.AnalyticsApi(pyqedit.ApiClient(configuration))
 
 try:
     # Get blockchain sync status information

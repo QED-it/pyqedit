@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.delete_rule_request import DeleteRuleRequest  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.delete_rule_request import DeleteRuleRequest  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestDeleteRuleRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDeleteRuleRequest(unittest.TestCase):
     def testDeleteRuleRequest(self):
         """Test DeleteRuleRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.delete_rule_request.DeleteRuleRequest()  # noqa: E501
+        # model = pyqedit.models.delete_rule_request.DeleteRuleRequest()  # noqa: E501
         pass
 
 

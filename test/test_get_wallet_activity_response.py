@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.get_wallet_activity_response import GetWalletActivityResponse  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.get_wallet_activity_response import GetWalletActivityResponse  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestGetWalletActivityResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGetWalletActivityResponse(unittest.TestCase):
     def testGetWalletActivityResponse(self):
         """Test GetWalletActivityResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.get_wallet_activity_response.GetWalletActivityResponse()  # noqa: E501
+        # model = pyqedit.models.get_wallet_activity_response.GetWalletActivityResponse()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.get_public_key_response import GetPublicKeyResponse  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.get_public_key_response import GetPublicKeyResponse  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestGetPublicKeyResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGetPublicKeyResponse(unittest.TestCase):
     def testGetPublicKeyResponse(self):
         """Test GetPublicKeyResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.get_public_key_response.GetPublicKeyResponse()  # noqa: E501
+        # model = pyqedit.models.get_public_key_response.GetPublicKeyResponse()  # noqa: E501
         pass
 
 

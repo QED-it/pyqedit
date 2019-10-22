@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.balance_for_asset import BalanceForAsset  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.balance_for_asset import BalanceForAsset  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestBalanceForAsset(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestBalanceForAsset(unittest.TestCase):
     def testBalanceForAsset(self):
         """Test BalanceForAsset"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.balance_for_asset.BalanceForAsset()  # noqa: E501
+        # model = pyqedit.models.balance_for_asset.BalanceForAsset()  # noqa: E501
         pass
 
 

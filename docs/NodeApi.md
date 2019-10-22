@@ -1,4 +1,4 @@
-# asset_transfer.NodeApi
+# pyqedit.NodeApi
 
 All URIs are relative to *http://localhost:12052*
 
@@ -32,19 +32,19 @@ Confirmation request tasks are confirmed using this point. After the user confir
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-task_action_request = asset_transfer.TaskActionRequest() # TaskActionRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+task_action_request = pyqedit.TaskActionRequest() # TaskActionRequest | 
 
 try:
     # Approve task with pending incoming transaction [async call]
@@ -87,19 +87,19 @@ A user may select to decline an incoming transaction. The related task will chan
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-task_action_request = asset_transfer.TaskActionRequest() # TaskActionRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+task_action_request = pyqedit.TaskActionRequest() # TaskActionRequest | 
 
 try:
     # Cancel task with pending incoming transaction both incoming and outgoing [async call]
@@ -142,19 +142,19 @@ Deletes a Wallet from the Node; All private information about the Wallet will be
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-delete_wallet_request = asset_transfer.DeleteWalletRequest() # DeleteWalletRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+delete_wallet_request = pyqedit.DeleteWalletRequest() # DeleteWalletRequest | 
 
 try:
     # Delete a Wallet [async call]
@@ -198,19 +198,19 @@ Export a viewing key that allows viewing all transactions to and from a wallet, 
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-export_auditor_access_wallet_request = asset_transfer.ExportAuditorAccessWalletRequest() # ExportAuditorAccessWalletRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+export_auditor_access_wallet_request = pyqedit.ExportAuditorAccessWalletRequest() # ExportAuditorAccessWalletRequest | 
 
 try:
     # Export viewing credentials for a Wallet
@@ -254,19 +254,19 @@ Export an encrypted form of the Wallet's secret key; The authorization password 
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-export_wallet_request = asset_transfer.ExportWalletRequest() # ExportWalletRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+export_wallet_request = pyqedit.ExportWalletRequest() # ExportWalletRequest | 
 
 try:
     # Export wallet secret key
@@ -310,19 +310,19 @@ Randomly generate a new Wallet under a specified ID; This only affects the Node 
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-generate_wallet_request = asset_transfer.GenerateWalletRequest() # GenerateWalletRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+generate_wallet_request = pyqedit.GenerateWalletRequest() # GenerateWalletRequest | 
 
 try:
     # Generate a new Wallet
@@ -365,18 +365,18 @@ Returns a list of the IDs of all Wallets currently stored on the Node. Both full
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
 
 try:
     # Get all wallet IDs
@@ -417,18 +417,18 @@ Returns a full list of all the Rules that govern admin and issuance rights withi
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
 
 try:
     # Get network governance Rules
@@ -469,19 +469,19 @@ Returns the meta-data of a given Task and its current status. The particular, pr
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-get_task_status_request = asset_transfer.GetTaskStatusRequest() # GetTaskStatusRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+get_task_status_request = pyqedit.GetTaskStatusRequest() # GetTaskStatusRequest | 
 
 try:
     # Get a specific task (by ID)
@@ -525,19 +525,19 @@ Returns a list of all Tasks along with their meta-data and statuses. The particu
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-get_tasks_request = asset_transfer.GetTasksRequest() # GetTasksRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+get_tasks_request = pyqedit.GetTasksRequest() # GetTasksRequest | 
 
 try:
     # Get a (potentially) filtered list of all Tasks
@@ -581,19 +581,19 @@ Import a viewing key generated by the export_auditor_access_wallet endpoint. Thi
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-import_auditor_access_wallet_request = asset_transfer.ImportAuditorAccessWalletRequest() # ImportAuditorAccessWalletRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+import_auditor_access_wallet_request = pyqedit.ImportAuditorAccessWalletRequest() # ImportAuditorAccessWalletRequest | 
 
 try:
     # Import viewing credentials for a Wallet [async call]
@@ -637,19 +637,19 @@ Import a Wallet into the Node under a specified ID; All the transactional histor
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-import_wallet_request = asset_transfer.ImportWalletRequest() # ImportWalletRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+import_wallet_request = pyqedit.ImportWalletRequest() # ImportWalletRequest | 
 
 try:
     # Import Wallet from a known secret key and authorization [async call]
@@ -693,19 +693,19 @@ Causes a specified Wallet's secret key to be stored in-memory for a specified am
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.NodeApi(asset_transfer.ApiClient(configuration))
-unlock_wallet_request = asset_transfer.UnlockWalletRequest() # UnlockWalletRequest | 
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+unlock_wallet_request = pyqedit.UnlockWalletRequest() # UnlockWalletRequest | 
 
 try:
     # Unlocks a wallet for a given amount of seconds [async call]

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.create_rule_request import CreateRuleRequest  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.create_rule_request import CreateRuleRequest  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestCreateRuleRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCreateRuleRequest(unittest.TestCase):
     def testCreateRuleRequest(self):
         """Test CreateRuleRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.create_rule_request.CreateRuleRequest()  # noqa: E501
+        # model = pyqedit.models.create_rule_request.CreateRuleRequest()  # noqa: E501
         pass
 
 

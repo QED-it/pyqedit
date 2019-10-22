@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.async_task_created_response import AsyncTaskCreatedResponse  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.async_task_created_response import AsyncTaskCreatedResponse  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestAsyncTaskCreatedResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAsyncTaskCreatedResponse(unittest.TestCase):
     def testAsyncTaskCreatedResponse(self):
         """Test AsyncTaskCreatedResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.async_task_created_response.AsyncTaskCreatedResponse()  # noqa: E501
+        # model = pyqedit.models.async_task_created_response.AsyncTaskCreatedResponse()  # noqa: E501
         pass
 
 

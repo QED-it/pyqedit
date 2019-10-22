@@ -1,4 +1,4 @@
-# asset_transfer.WalletApi
+# pyqedit.WalletApi
 
 All URIs are relative to *http://localhost:12052*
 
@@ -27,19 +27,19 @@ Create new Rules that can either create a new admin, a new issuer, or both; The 
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.WalletApi(asset_transfer.ApiClient(configuration))
-create_rule_request = asset_transfer.CreateRuleRequest() # CreateRuleRequest | 
+api_instance = pyqedit.WalletApi(pyqedit.ApiClient(configuration))
+create_rule_request = pyqedit.CreateRuleRequest() # CreateRuleRequest | 
 
 try:
     # Create a new Rule in the network [async call]
@@ -83,19 +83,19 @@ Delete an existing Rule from the network; The Rule is deleted by a Wallet which 
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.WalletApi(asset_transfer.ApiClient(configuration))
-delete_rule_request = asset_transfer.DeleteRuleRequest() # DeleteRuleRequest | 
+api_instance = pyqedit.WalletApi(pyqedit.ApiClient(configuration))
+delete_rule_request = pyqedit.DeleteRuleRequest() # DeleteRuleRequest | 
 
 try:
     # Delete an existing Rule from the network [async call]
@@ -139,19 +139,19 @@ List transactions that were created by a specifed Wallet or that affected that W
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.WalletApi(asset_transfer.ApiClient(configuration))
-get_wallet_activity_request = asset_transfer.GetWalletActivityRequest() # GetWalletActivityRequest | 
+api_instance = pyqedit.WalletApi(pyqedit.ApiClient(configuration))
+get_wallet_activity_request = pyqedit.GetWalletActivityRequest() # GetWalletActivityRequest | 
 
 try:
     # Get wallet activity (transactions)
@@ -195,19 +195,19 @@ Get a list of the Asset Types held within a given Wallet and the amount of each 
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.WalletApi(asset_transfer.ApiClient(configuration))
-get_wallet_balance_request = asset_transfer.GetWalletBalanceRequest() # GetWalletBalanceRequest | 
+api_instance = pyqedit.WalletApi(pyqedit.ApiClient(configuration))
+get_wallet_balance_request = pyqedit.GetWalletBalanceRequest() # GetWalletBalanceRequest | 
 
 try:
     # Get wallets balances
@@ -251,19 +251,19 @@ Generate an Address for the Wallet; the address can be used by other Wallet owne
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.WalletApi(asset_transfer.ApiClient(configuration))
-get_new_address_request = asset_transfer.GetNewAddressRequest() # GetNewAddressRequest | 
+api_instance = pyqedit.WalletApi(pyqedit.ApiClient(configuration))
+get_new_address_request = pyqedit.GetNewAddressRequest() # GetNewAddressRequest | 
 
 try:
     # Get a new address from a given diversifier or generate randomly
@@ -307,19 +307,19 @@ Get the unique public key of the Wallet; This key is unique across the entire ne
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.WalletApi(asset_transfer.ApiClient(configuration))
-get_public_key_request = asset_transfer.GetPublicKeyRequest() # GetPublicKeyRequest | 
+api_instance = pyqedit.WalletApi(pyqedit.ApiClient(configuration))
+get_public_key_request = pyqedit.GetPublicKeyRequest() # GetPublicKeyRequest | 
 
 try:
     # Get wallet public key
@@ -363,19 +363,19 @@ Issue Assets from a Wallet to a recipient Address; The issuing Wallet is require
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.WalletApi(asset_transfer.ApiClient(configuration))
-issue_asset_request = asset_transfer.IssueAssetRequest() # IssueAssetRequest | 
+api_instance = pyqedit.WalletApi(pyqedit.ApiClient(configuration))
+issue_asset_request = pyqedit.IssueAssetRequest() # IssueAssetRequest | 
 
 try:
     # Issue assets [async call]
@@ -419,19 +419,19 @@ Transfer a specified amount of a specified Asset Type from a specified Wallet to
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.WalletApi(asset_transfer.ApiClient(configuration))
-transfer_asset_request = asset_transfer.TransferAssetRequest() # TransferAssetRequest | 
+api_instance = pyqedit.WalletApi(pyqedit.ApiClient(configuration))
+transfer_asset_request = pyqedit.TransferAssetRequest() # TransferAssetRequest | 
 
 try:
     # Transfer assets [async call]

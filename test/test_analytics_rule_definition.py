@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.analytics_rule_definition import AnalyticsRuleDefinition  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.analytics_rule_definition import AnalyticsRuleDefinition  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestAnalyticsRuleDefinition(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAnalyticsRuleDefinition(unittest.TestCase):
     def testAnalyticsRuleDefinition(self):
         """Test AnalyticsRuleDefinition"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.analytics_rule_definition.AnalyticsRuleDefinition()  # noqa: E501
+        # model = pyqedit.models.analytics_rule_definition.AnalyticsRuleDefinition()  # noqa: E501
         pass
 
 

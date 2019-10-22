@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.healthcheck_response import HealthcheckResponse  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.healthcheck_response import HealthcheckResponse  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestHealthcheckResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestHealthcheckResponse(unittest.TestCase):
     def testHealthcheckResponse(self):
         """Test HealthcheckResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.healthcheck_response.HealthcheckResponse()  # noqa: E501
+        # model = pyqedit.models.healthcheck_response.HealthcheckResponse()  # noqa: E501
         pass
 
 

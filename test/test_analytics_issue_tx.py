@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.analytics_issue_tx import AnalyticsIssueTx  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.analytics_issue_tx import AnalyticsIssueTx  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestAnalyticsIssueTx(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAnalyticsIssueTx(unittest.TestCase):
     def testAnalyticsIssueTx(self):
         """Test AnalyticsIssueTx"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.analytics_issue_tx.AnalyticsIssueTx()  # noqa: E501
+        # model = pyqedit.models.analytics_issue_tx.AnalyticsIssueTx()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.get_task_status_request import GetTaskStatusRequest  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.get_task_status_request import GetTaskStatusRequest  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestGetTaskStatusRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGetTaskStatusRequest(unittest.TestCase):
     def testGetTaskStatusRequest(self):
         """Test GetTaskStatusRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.get_task_status_request.GetTaskStatusRequest()  # noqa: E501
+        # model = pyqedit.models.get_task_status_request.GetTaskStatusRequest()  # noqa: E501
         pass
 
 

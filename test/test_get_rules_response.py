@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.get_rules_response import GetRulesResponse  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.get_rules_response import GetRulesResponse  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestGetRulesResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGetRulesResponse(unittest.TestCase):
     def testGetRulesResponse(self):
         """Test GetRulesResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.get_rules_response.GetRulesResponse()  # noqa: E501
+        # model = pyqedit.models.get_rules_response.GetRulesResponse()  # noqa: E501
         pass
 
 

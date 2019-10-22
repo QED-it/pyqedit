@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.api.wallet_api import WalletApi  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.api.wallet_api import WalletApi  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestWalletApi(unittest.TestCase):
     """WalletApi unit test stubs"""
 
     def setUp(self):
-        self.api = asset_transfer.api.wallet_api.WalletApi()  # noqa: E501
+        self.api = pyqedit.api.wallet_api.WalletApi()  # noqa: E501
 
     def tearDown(self):
         pass

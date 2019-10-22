@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.get_network_activity_response import GetNetworkActivityResponse  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.get_network_activity_response import GetNetworkActivityResponse  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestGetNetworkActivityResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGetNetworkActivityResponse(unittest.TestCase):
     def testGetNetworkActivityResponse(self):
         """Test GetNetworkActivityResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.get_network_activity_response.GetNetworkActivityResponse()  # noqa: E501
+        # model = pyqedit.models.get_network_activity_response.GetNetworkActivityResponse()  # noqa: E501
         pass
 
 

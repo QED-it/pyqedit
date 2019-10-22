@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.api.analytics_api import AnalyticsApi  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.api.analytics_api import AnalyticsApi  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestAnalyticsApi(unittest.TestCase):
     """AnalyticsApi unit test stubs"""
 
     def setUp(self):
-        self.api = asset_transfer.api.analytics_api.AnalyticsApi()  # noqa: E501
+        self.api = pyqedit.api.analytics_api.AnalyticsApi()  # noqa: E501
 
     def tearDown(self):
         pass

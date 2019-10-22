@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.analytics_spend_description import AnalyticsSpendDescription  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.analytics_spend_description import AnalyticsSpendDescription  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestAnalyticsSpendDescription(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAnalyticsSpendDescription(unittest.TestCase):
     def testAnalyticsSpendDescription(self):
         """Test AnalyticsSpendDescription"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.analytics_spend_description.AnalyticsSpendDescription()  # noqa: E501
+        # model = pyqedit.models.analytics_spend_description.AnalyticsSpendDescription()  # noqa: E501
         pass
 
 

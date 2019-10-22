@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.api.node_api import NodeApi  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.api.node_api import NodeApi  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestNodeApi(unittest.TestCase):
     """NodeApi unit test stubs"""
 
     def setUp(self):
-        self.api = asset_transfer.api.node_api.NodeApi()  # noqa: E501
+        self.api = pyqedit.api.node_api.NodeApi()  # noqa: E501
 
     def tearDown(self):
         pass

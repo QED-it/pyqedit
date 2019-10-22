@@ -1,4 +1,4 @@
-# asset_transfer.HealthApi
+# pyqedit.HealthApi
 
 All URIs are relative to *http://localhost:12052*
 
@@ -20,18 +20,18 @@ Reports the health of the various components of the system as well as an overall
 ```python
 from __future__ import print_function
 import time
-import asset_transfer
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = asset_transfer.Configuration()
+configuration = pyqedit.Configuration()
 configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['x-auth-token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = asset_transfer.HealthApi(asset_transfer.ApiClient(configuration))
+api_instance = pyqedit.HealthApi(pyqedit.ApiClient(configuration))
 
 try:
     # Perform a healthcheck of the node and its dependent services

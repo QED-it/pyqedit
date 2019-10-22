@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.task_state import TaskState  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.task_state import TaskState  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestTaskState(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTaskState(unittest.TestCase):
     def testTaskState(self):
         """Test TaskState"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.task_state.TaskState()  # noqa: E501
+        # model = pyqedit.models.task_state.TaskState()  # noqa: E501
         pass
 
 

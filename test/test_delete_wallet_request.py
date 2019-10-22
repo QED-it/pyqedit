@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import asset_transfer
-from asset_transfer.models.delete_wallet_request import DeleteWalletRequest  # noqa: E501
-from asset_transfer.rest import ApiException
+import pyqedit
+from pyqedit.models.delete_wallet_request import DeleteWalletRequest  # noqa: E501
+from pyqedit.rest import ApiException
 
 
 class TestDeleteWalletRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDeleteWalletRequest(unittest.TestCase):
     def testDeleteWalletRequest(self):
         """Test DeleteWalletRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = asset_transfer.models.delete_wallet_request.DeleteWalletRequest()  # noqa: E501
+        # model = pyqedit.models.delete_wallet_request.DeleteWalletRequest()  # noqa: E501
         pass
 
 
