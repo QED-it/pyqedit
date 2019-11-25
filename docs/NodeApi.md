@@ -11,12 +11,12 @@ Method | HTTP request | Description
 [**node_export_wallet_post**](NodeApi.md#node_export_wallet_post) | **POST** /node/export_wallet | Export wallet secret key
 [**node_generate_wallet_post**](NodeApi.md#node_generate_wallet_post) | **POST** /node/generate_wallet | Generate a new Wallet
 [**node_get_all_wallets_post**](NodeApi.md#node_get_all_wallets_post) | **POST** /node/get_all_wallets | Get all wallet IDs
+[**node_get_notifications_post**](NodeApi.md#node_get_notifications_post) | **POST** /node/get_notifications | Get notifications
 [**node_get_rules_post**](NodeApi.md#node_get_rules_post) | **POST** /node/get_rules | Get network governance Rules
 [**node_get_task_status_post**](NodeApi.md#node_get_task_status_post) | **POST** /node/get_task_status | Get a specific task (by ID)
 [**node_get_tasks_post**](NodeApi.md#node_get_tasks_post) | **POST** /node/get_tasks | Get a (potentially) filtered list of all Tasks
 [**node_import_auditor_access_wallet_post**](NodeApi.md#node_import_auditor_access_wallet_post) | **POST** /node/import_auditor_access_wallet | Import viewing credentials for a Wallet [async call]
 [**node_import_wallet_post**](NodeApi.md#node_import_wallet_post) | **POST** /node/import_wallet | Import Wallet from a known secret key and authorization [async call]
-[**node_unlock_wallet_post**](NodeApi.md#node_unlock_wallet_post) | **POST** /node/unlock_wallet | Unlocks a wallet for a given amount of seconds [async call]
 
 
 # **node_approve_task_post**
@@ -75,7 +75,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **node_cancel_task_post**
-> node_cancel_task_post(task_action_request)
+> AsyncTaskCreatedResponse node_cancel_task_post(task_action_request)
 
 Cancel task with pending incoming transaction both incoming and outgoing [async call]
 
@@ -103,7 +103,8 @@ task_action_request = pyqedit.TaskActionRequest() # TaskActionRequest |
 
 try:
     # Cancel task with pending incoming transaction both incoming and outgoing [async call]
-    api_instance.node_cancel_task_post(task_action_request)
+    api_response = api_instance.node_cancel_task_post(task_action_request)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling NodeApi->node_cancel_task_post: %s\n" % e)
 ```
@@ -116,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**AsyncTaskCreatedResponse**](AsyncTaskCreatedResponse.md)
 
 ### Authorization
 
@@ -404,6 +405,62 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **node_get_notifications_post**
+> GetNotificationsResponse node_get_notifications_post(get_notifications_request)
+
+Get notifications
+
+Notifications are the Node's way to report about recent activity and status changes. This endpoint allows polling for these changes and fetching the updates. The notifications can be filtered in multiple ways.
+
+### Example
+
+* Api Key Authentication (ApiKeyAuth): 
+```python
+from __future__ import print_function
+import time
+import pyqedit
+from pyqedit.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: ApiKeyAuth
+configuration = pyqedit.Configuration()
+configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['x-auth-token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
+get_notifications_request = pyqedit.GetNotificationsRequest() # GetNotificationsRequest | 
+
+try:
+    # Get notifications
+    api_response = api_instance.node_get_notifications_post(get_notifications_request)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling NodeApi->node_get_notifications_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **get_notifications_request** | [**GetNotificationsRequest**](GetNotificationsRequest.md)|  | 
+
+### Return type
+
+[**GetNotificationsResponse**](GetNotificationsResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **node_get_rules_post**
 > GetRulesResponse node_get_rules_post()
 
@@ -664,62 +721,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **import_wallet_request** | [**ImportWalletRequest**](ImportWalletRequest.md)|  | 
-
-### Return type
-
-[**AsyncTaskCreatedResponse**](AsyncTaskCreatedResponse.md)
-
-### Authorization
-
-[ApiKeyAuth](../README.md#ApiKeyAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **node_unlock_wallet_post**
-> AsyncTaskCreatedResponse node_unlock_wallet_post(unlock_wallet_request)
-
-Unlocks a wallet for a given amount of seconds [async call]
-
-Causes a specified Wallet's secret key to be stored in-memory for a specified amount of time in order to increase transactional latency. Should only be used in cases where latency is highly sensitive.
-
-### Example
-
-* Api Key Authentication (ApiKeyAuth): 
-```python
-from __future__ import print_function
-import time
-import pyqedit
-from pyqedit.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: ApiKeyAuth
-configuration = pyqedit.Configuration()
-configuration.api_key['x-auth-token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['x-auth-token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = pyqedit.NodeApi(pyqedit.ApiClient(configuration))
-unlock_wallet_request = pyqedit.UnlockWalletRequest() # UnlockWalletRequest | 
-
-try:
-    # Unlocks a wallet for a given amount of seconds [async call]
-    api_response = api_instance.node_unlock_wallet_post(unlock_wallet_request)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling NodeApi->node_unlock_wallet_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **unlock_wallet_request** | [**UnlockWalletRequest**](UnlockWalletRequest.md)|  | 
 
 ### Return type
 
